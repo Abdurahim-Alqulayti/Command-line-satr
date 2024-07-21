@@ -1,0 +1,40 @@
+------------------------------- command 103 --------------------------------
+< output are send to the dir(1) standard output, and the error to dir(2) standard error >
+< input are taken from standard input <stdin> dir(0) >
+<command> > <file.txt>    // save output in this file EX: ls > file.txt
+<command> 2> <file.txt>   // save error in this file
+<command> >> <file.txt>   // save output in file, append no overwrite 
+<command> &> <file.txt>   // save output & error in this file
+<command> < <file.txt>    // redirect standard input
+
+------------------------------- command 102 --------------------------------
+type <command name>       // knowing the type of the command
+which <command name>      // knowing the location of the command
+help <pilt_in_command>    // tells you what you can do
+man <command>             // give a full discretion <q to exit>
+man <num> <command>       // search in a specific section number
+apropos <word>            // search in all command manual for this word
+whatis <command>          // on line describe the command
+whois <domain>            // give you a brief description 
+alias <name>='<commands>' // make a command from commands ex:(alias sater='cd ..; ls')
+unalias <name>            // delete a command you just make 
+alias                     // show all command you created
+
+------------------------------- command 101 --------------------------------
+ls -l                     // show with details 
+df                        // space available in the drive 
+pwd                       // where am i
+ls -l                     // show hidden files as well 
+file <something>          // give you details about it 
+less <file>               // open file
+cat <file>                // open file
+nano <file>               // open/edit file
+cp                        // copy <something> <to file>
+mv                        // move files or rename it
+rm                        // remove
+ln -s <file> <link_name>  // making shortcut
+
+------------------------------- command 100 --------------------------------
+*        // all 
+*.txt    // all txt files
+;        // split command in one line
